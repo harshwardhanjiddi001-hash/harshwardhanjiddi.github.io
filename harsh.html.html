@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harshwardhan M. Jiddi — Portfolio</title>
+  <style>
+    :root{
+      --bg:#000000; /* Deep black */
+      --card:#0d0d0d; /* Soft black */
+      --gold:#d4af37; /* Royal Gold */
+      --gold-light:#f7e27f;
+      --white:#f5f5f5;
+      --muted:#b9b9b9;
+      --glass:rgba(255,255,255,0.05);
+      font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;background:linear-gradient(180deg,#000000,#0a0a0a);color:var(--white)}
+
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+
+    header{display:flex;gap:24px;align-items:center}
+    .avatar{width:140px;height:140px;border-radius:20px;overflow:hidden;flex-shrink:0;border:3px solid var(--gold);background:linear-gradient(135deg,var(--gold),var(--gold-light));padding:3px;box-shadow:0 0 25px rgba(212,175,55,0.3);} 
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+
+    .intro{flex:1}
+    .name{font-size:30px;font-weight:700;color:var(--gold-light)}
+    .role{color:var(--muted);margin-top:6px}
+
+    .cta{margin-top:14px;display:flex;gap:12px;align-items:center}
+    .btn{background:linear-gradient(90deg,var(--gold),var(--gold-light));padding:10px 14px;border-radius:10px;color:#000;font-weight:700;text-decoration:none;box-shadow:0 0 20px rgba(212,175,55,0.4)}
+
+    .icons{display:flex;gap:12px}
+    .icon-btn{width:44px;height:44px;border-radius:10px;background:var(--glass);display:grid;place-items:center;border:1px solid rgba(255,255,255,0.08);transition:.18s}
+    .icon-btn:hover{transform:translateY(-6px);box-shadow:0 0 25px rgba(212,175,55,0.4)}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
+
+    .card{background:#0b0b0b;border-radius:16px;padding:18px;border:1px solid rgba(212,175,55,0.2);box-shadow:0 0 15px rgba(212,175,55,0.08)}
+
+    .about p{color:var(--muted);line-height:1.6}
+
+    .detail-list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+    .detail{display:flex;justify-content:space-between;padding:12px;border-radius:10px;background:rgba(255,255,255,0.03)}
+    .detail span:last-child{color:var(--gold-light);font-weight:700}
+    a{color:var(--gold-light);text-decoration:none}
+
+    .skills{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    .skill{padding:8px 10px;border-radius:999px;background:linear-gradient(90deg,rgba(212,175,55,0.25),rgba(247,226,127,0.15));color:var(--gold-light);font-weight:600}
+
+    footer{text-align:center;margin-top:20px;color:var(--muted)}
+
+    .ribbons{position:fixed;inset:0;pointer-events:none;mix-blend-mode:screen}
+    .ribbon{position:absolute;width:360px;height:220px;filter:blur(40px);opacity:.15}
+    .r1{background:linear-gradient(90deg,#d4af37,#f7e27f);top:-60px;left:-120px}
+    .r2{background:linear-gradient(90deg,#f7e27f,#d4af37);bottom:-80px;right:-140px;opacity:.1}
+
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+    .avatar,.card{animation:floaty 6s ease-in-out infinite}
+
+    @media(max-width:900px){main{grid-template-columns:1fr}.avatar{width:110px;height:110px}}
+
+    .contact-grid{display:grid;gap:10px}
+    input,textarea{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:var(--white)}
+    .btn-secondary{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:var(--gold-light);font-weight:600}
+  </style>
+</head>
+<body>
+
+<div class="ribbons"><div class="ribbon r1"></div><div class="ribbon r2"></div></div>
+
+<div class="container">
+  <header>
+    <div class="avatar"><img src="image/WhatsApp Image 2025-12-09 at 8.45.56 PM.jpeg" alt="Harshwardhan" /></div>
+    <div class="intro">
+      <h1 class="name">Harshwardhan Mantesh Jiddi</h1>
+      <div class="role">Engineering — AIML student, <a href="https://www.dkte.ac.in/index.php" target="_blank">DKTE College</a></div>
+
+      <div class="cta">
+        <a class="btn" href="#contact">Contact Me</a>
+        <div class="icons">
+          <a class="icon-btn" href="https://instagram.com/harsh_jiddi_007" target="_blank"><svg width="20" height="20" fill="var(--gold-light)" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="var(--gold-light)"/><circle cx="12" cy="12" r="4.5" stroke="var(--gold-light)"/><circle cx="17" cy="7" r="1" fill="var(--gold-light)"/></svg></a>
+          <a class="icon-btn" href="https://www.facebook.com/search/top?q=Harshwardhan%20jiddi" target="_blank"><svg width="20" height="20" fill="none" stroke="var(--gold-light)" viewBox="0 0 24 24"><path d="M15 8h-2V6.6c0-.7.2-1.1 1-1.1h1V3.2c-.9-.1-2-.2-3.1-.2C9.6 3 8 4.4 8 6.9V8H6v3h2v7h3v-7h2.1l.9-3H11V6.9c0-.7.2-.9.9-.9H13V8Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="card about">
+        <h2 style="color:var(--gold-light)">About</h2>
+        <p>Hi — I’m Harshwardhan, an AIML engineering student at DKTE College. I enjoy AI, machine learning, swimming, gaming and reading. I also have strong C programming skills.</p>
+
+        <div class="detail-list">
+          <div class="detail"><span>Contact</span><span><a href="tel:7666584526">+91 76665 84526</a></span></div>
+          <div class="detail"><span>Email</span><span><a href="mailto:harshwardhanjiddi001@gmail.com">harshwardhanjiddi001@gmail.com</a></span></div>
+          <div class="detail"><span>College</span><span><a href="https://www.dkte.ac.in/index.php" target="_blank">DKTE</a></span></div>
+          <div class="detail"><span>Achievement</span><span>C Programming</span></div>
+        </div>
+
+        <h3 style="margin-top:14px;color:var(--gold-light)">Hobbies</h3>
+        <div class="skills">
+          <div class="skill">Swimming</div>
+          <div class="skill">Gaming</div>
+          <div class="skill">Reading</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2 style="color:var(--gold-light)">Skills & Interests</h2>
+        <p style="color:var(--muted)">Machine Learning | Python | C Programming | Data Structures | AI Concepts</p>
+      </div>
+    </section>
+
+    <aside class="right-col">
+      <div class="card">
+        <h3 style="color:var(--gold-light)">Quick Links</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+          <a class="btn-secondary" href="mailto:harshwardhanjiddi001@gmail.com">Email Me</a>
+          <a class="btn-secondary" href="https://instagram.com/harsh_jiddi_007" target="_blank">Instagram</a>
+          <a class="btn-secondary" href="https://www.facebook.com/search/top?q=Harshwardhan%20jiddi" target="_blank">Facebook</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h3 style="color:var(--gold-light)">Contact</h3>
+        <form id="contact" class="contact-grid">
+          <input placeholder="Your name" required />
+          <input placeholder="Your email" type="email" required />
+          <textarea placeholder="Your message" rows="4" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    Built with ❤️ by Harshwardhan — AIML student | DKTE College
+  </footer>
+</div>
+
+</body>
+</html>
